@@ -1,0 +1,275 @@
+/* ========================= */
+/* BASE */
+/* ========================= */
+
+body {
+    margin: 0;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+section.top-page {
+    background-color: black;
+    height: 170vh;
+}
+
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    background: red;
+    height: 15vh;
+}
+
+header img {
+    width: 160px;
+    height: 200px;
+}
+
+.navigation {
+    margin-left: 40px;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    margin: 0 15px;
+    width: 100px;
+    font-size: 24px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.navigation a:hover {
+    transform: scale(1.2);
+}
+
+.btn {
+    margin-left: auto;
+
+    display: inline-block;
+    padding: 15px 30px;
+
+    background: #6C63FF;
+    color: white;
+
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+
+    border-radius: 10px;
+
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #5548e0;
+    transform: scale(1.05);
+}
+
+/* ========================= */
+/* CONTENU */
+/* ========================= */
+
+.landing-page {
+    color: white;
+    text-align: center;
+    font-size: 32px;
+}
+
+.news1 {
+    color: white;
+    font-size: 24px;
+}
+
+.cadre {
+    border: 4px solid red;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+/* Images déco */
+
+.omen,
+.tejo {
+    position: absolute;
+    right: 1cm;
+    bottom: 0;
+}
+
+.omen img,
+.tejo img {
+    width: 300px;
+}
+
+.clove {
+    position: absolute;
+    right: 1cm;
+    bottom: -60px;
+}
+
+.clove img {
+    width: 300px;
+}
+
+/* Chamber */
+
+.chamber-section {
+    background: black;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    padding-left: 1cm;
+}
+
+.chamber {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-top: -700px;
+}
+
+.chamber img {
+    width: 300px;
+}
+
+.texte-chamber {
+    width: 500px;
+    padding: 25px;
+    border: 3px solid white;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, .05);
+    color: white;
+}
+
+a {
+    color: #66ccff;
+}
+
+/* ========================= */
+/* MENU MOBILE */
+/* ========================= */
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width:768px) {
+
+    section.top-page {
+        height: auto;
+    }
+
+    header {
+        height: auto;
+        padding: 15px;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    /* Logo */
+
+    header img {
+        width: 90px;
+        height: auto;
+    }
+
+    /* Bouton Discord */
+
+    .btn {
+        margin-left: 15px;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    /* Icône menu */
+
+    .menu-icon {
+        display: block;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+        margin-left: auto;
+    }
+
+    /* Navigation */
+
+    .navigation {
+        display: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation li {
+        width: auto;
+        margin: 12px 0;
+        font-size: 20px;
+    }
+
+    #menu-toggle:checked~.navigation {
+        display: block;
+    }
+
+    /* Cache seulement les images décoratives */
+
+    .omen,
+    .tejo,
+    .clove,
+    .chamber img {
+        display: none;
+    }
+
+    .landing-page {
+        font-size: 22px;
+        padding: 20px;
+    }
+
+    .news1 {
+        font-size: 18px;
+    }
+
+    .cadre {
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .chamber {
+        display: block;
+        margin-top: 0;
+    }
+
+    .texte-chamber {
+        width: auto;
+    }
+}
+
