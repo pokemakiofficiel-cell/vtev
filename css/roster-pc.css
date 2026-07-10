@@ -1,0 +1,165 @@
+/* ========================= */
+/* BASE DU SITE */
+/* ========================= */
+
+body {
+    margin: 0 auto;
+    background-color: black;
+}
+
+section.top-page {
+    background-color: black;
+    height: auto;
+}
+
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+header {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    height: 15vh;
+    padding: 20px 40px;
+}
+
+header img {
+    width: 160px;
+    height: 200px;
+}
+
+/* ========================= */
+/* NAVIGATION */
+/* ========================= */
+
+.navigation {
+    margin-left: 40px;
+}
+
+nav.navigation ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav.navigation li {
+    margin: 0 15px;
+    margin-left: 30px;
+    width: 100px;
+    font-size: 24px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.navigation a:hover {
+    transform: scale(1.2);
+}
+
+/* ========================= */
+/* BOUTON DISCORD */
+/* ========================= */
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-left: auto;
+
+    background-color: #6C63FF;
+    color: white;
+
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #5548e0;
+    transform: scale(1.05);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* ========================= */
+/* LANDING PAGE */
+/* ========================= */
+
+div.landing-page {
+    color: white;
+    text-align: center;
+    font-size: 32px;
+}
+
+/* ========================= */
+/* PAGE ROSTERS-PC */
+/* ========================= */
+
+.jjdr {
+    width: calc(100% - 2cm);
+    max-width: 900px;
+
+    margin: 1cm auto 25px auto;
+    padding: 30px;
+
+    background: #f8b944;
+    border-radius: 20px;
+
+    text-align: center;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.jjdr:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.25);
+}
+
+.jjdr h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.jjdr img {
+    width: 180px;
+    height: 180px;
+
+    object-fit: cover;
+    border-radius: 50%;
+
+    border: 5px solid white;
+
+    margin-bottom: 25px;
+}
+
+.description {
+    display: inline-block;
+
+    margin: 6px;
+    padding: 12px 18px;
+
+    background: white;
+    color: #111;
+
+    border-radius: 30px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.jjdr+.jjdr {
+    margin-top: 30px;
+}
